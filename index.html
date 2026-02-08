@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -12,39 +13,54 @@ background:#f4f6f5;
 color:#222;
 }
 
+/* HEADER */
 .header{
 background:#2B433A;
 color:white;
-padding:40px 20px;
+padding:18px 40px;
 display:flex;
 align-items:center;
-justify-content:center;
-gap:20px;
+justify-content:space-between;
 }
 
 .logo{
-height:60px;
+height:50px;
 }
 
+.header-title{
+font-size:20px;
+letter-spacing:1px;
+}
+
+/* HERO */
 .hero{
 text-align:center;
-padding:40px 20px;
+padding:70px 20px;
+background:white;
 }
 
+.hero h1{
+margin:0;
+color:#2B433A;
+font-size:38px;
+}
+
+/* CONTENT BOX */
 .section{
 max-width:900px;
-margin:30px auto;
+margin:40px auto;
 background:white;
 padding:35px;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.05);
+box-shadow:0 4px 12px rgba(0,0,0,0.05);
 }
 
-h1,h2{
-margin-top:0;
+h2{
 color:#2B433A;
+margin-top:0;
 }
 
+/* FOOTER */
 .footer{
 text-align:center;
 margin:40px;
@@ -60,28 +76,31 @@ font-weight:bold;
 
 <body>
 
-<!-- HEADER MIT LOGO -->
+<!-- HEADER -->
 <div class="header">
-
-<!-- 👉 Hier kommt dein Logo rein -->
+<div>
 <img src="logo.png" class="logo">
-
+</div>
+<div class="header-title">Eastside GmbH</div>
 </div>
 
+<!-- HERO -->
 <div class="hero">
-<h1>Eastside GmbH</h1>
-<p>An- und Verkauf von Immobilien</p>
+<h1>An- und Verkauf von Immobilien</h1>
+<p>Diskret. Strukturiert. Nachhaltig.</p>
 </div>
 
+<!-- ÜBER UNS -->
 <div class="section">
 <h2>Über uns</h2>
 <p>
 Die Eastside GmbH ist auf den An- und Verkauf von Wohnimmobilien spezialisiert.
 Der Fokus liegt auf Bestandsobjekten mit Entwicklungspotenzial sowie einer
-strukturierten und diskreten Abwicklung.
+professionellen und diskreten Abwicklung.
 </p>
 </div>
 
+<!-- LEISTUNGEN -->
 <div class="section">
 <h2>Leistungen</h2>
 <p>
@@ -91,6 +110,7 @@ strukturierten und diskreten Abwicklung.
 </p>
 </div>
 
+<!-- KONTAKT -->
 <div class="section">
 <h2>Kontakt</h2>
 <p>
@@ -99,6 +119,7 @@ strukturierten und diskreten Abwicklung.
 </p>
 </div>
 
+<!-- FOOTER -->
 <div class="footer">
 <a href="impressum.html">Impressum</a>
 </div>
